@@ -21,7 +21,7 @@ export class NgDisqusModule {
     return {
       ngModule: NgDisqusModule,
       providers: [
-        { provide: InjectionToken, useValue: shortName },
+        { provide: SHORTNAME, useValue: shortName },
         {
           provide: NgDisqusService,
           useFactory: NgDisqusServiceFactory,
