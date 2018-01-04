@@ -1,3 +1,5 @@
+<h1>Angular Disqus</h1>
+
 ## Installation
 
 Install it with npm

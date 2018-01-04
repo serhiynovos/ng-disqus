@@ -1,6 +1,6 @@
 {
   "name": "ng-disqus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Angular Disqus Module",
   "main": "index.ts",
   "scripts": {
