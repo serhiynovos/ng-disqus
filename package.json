@@ -1,0 +1,23 @@
+{
+  "name": "ng-disqus",
+  "version": "1.0.0",
+  "description": "Angular Disqus Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serrg1994/ng-disqus.git"
+  },
+  "keywords": [
+    "angular",
+    "disqus"
+  ],
+  "author": "Novoseletskiy Serhiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serrg1994/ng-disqus/issues"
+  },
+  "homepage": "https://github.com/serrg1994/ng-disqus#readme"
+}
