@@ -18,6 +18,7 @@ import { NgDisqusModule } from 'ng-disqus';
     NgDisqusModule.forRoot('disqus_shortname')
   ]
 })
+```
 
 The paramter `shortname` is the unique identifier for your website as registered on Disqus, make sure it is defined in your module.
 
