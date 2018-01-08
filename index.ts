@@ -1,1 +1,1 @@
-export * from './src/ng-disqus.module';
+export * from './public_api';
