@@ -1,4 +1,4 @@
-import { NgDisqusService } from './ng-disqus.service';
+
 import {
   Component,
   OnChanges,
@@ -24,17 +24,13 @@ export class NgDisqusComponent implements OnChanges, OnDestroy {
   @Input() title: string;
   @Input() category: string;
   @Input() language: string;
+  @Input() shortname: string;
 
   /** DISQUS events */
   @Output() newComment = new EventEmitter<any>(true);
   @Output() ready = new EventEmitter<any>(true);
   @Output() paginate = new EventEmitter<any>(true);
 
-  constructor(
-    private disqusService: NgDisqusService
-  ) {
-
-  }
 
   ngOnChanges(changes: SimpleChanges) {
     if (!window['DISQUS']) {
@@ -52,7 +48,7 @@ export class NgDisqusComponent implements OnChanges, OnDestroy {
   private createDisqusScript() {
     window['disqus_config'] = this.disqus_config;
     const d = document, s = d.createElement('script');
-    s.src = `//${this.disqusService.shortname}.disqus.com/embed.js`;
+    s.src = `//${this.shortname}.disqus.com/embed.js`;
     s.setAttribute('data-timestamp', (new Date()).toISOString());
     (d.head || d.body).appendChild(s);
   }
